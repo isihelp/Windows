@@ -376,19 +376,6 @@ By default, the Intel® Driver & Support Assistant places downloaded drivers in
 - `C:\ProgramData\Intel\DSA\Downloads`
 
 
-###### C. Update the NUC HDMI driver: (alleviates Teams related display issues) - [click HERE to download](https://downloadcenter.intel.com/download/29911/Intel-Graphics-DCH-Driver-for-NUC8i3BE-NUC8i5BE-NUC8i7BE?wapkw=HDMI%20nuc8i7beh)
-old link
-[click HERE to download](https://downloadcenter.intel.com/download/29472/HDMI-Firmware-Update-Tool-for-NUC8i3BE-NUC8i5BE-NUC8i7BE?v=t)
-
-
-#### Note - Please ensure ALL instructions for followed when updating the HDMI drivers. Specifically, an HDMI device must be connected to the NUC HDMI port and powered on. These instructions can be found in the extracted driver folder or at this link.
-
-#### D. Update the Displaylink device drivers [click HERE to download](https://www.displaylink.com/downloads/windows) then select "DisplayLink USB Graphics Software for Windows" Download and install these make sure the Tap is connected and functional as these manage the Tap display.
-
-#### E: Update the Intel NUC BIOS: [click HERE to download - Intel-NUC-Kit-NUC8i5BEH](https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH) 
-
-#### F: Setup a second nightly reboot to ensure the Teams Room is up and ready after any windows/teams updates occurring during the night. As an example, if the Teams nightly reboot is set for 2 or 3 AM, adding one at 7 AM shortly before the office opens should ensure stability. I've also include the steps below to add another reboot task.
-
 
 Press WinKey+R > type taskschd.msc 
 and press Enter (it will launch Task Scheduler)
@@ -411,13 +398,6 @@ And that's all, you can press Finish
 or can be done via CMD, script below.
 schtasks /create /sc daily /tn "Daily auto force reboot" /tr "c:\windows\system32\shutdown.exe /t 0 /r /f" /st 23:59
 
-
-
-
-#### Thinksmart Hub 500 - Type 10V5 
-[Link - Lenovo Support](https://smartsupport.lenovo.com/us/en/products/SMART/SMART-OFFICE/THINKSMART-HUB-500/10V5/10V50000US/YH010GGE)
-
-` https://smartsupport.lenovo.com/us/en/products/SMART/SMART-OFFICE/THINKSMART-HUB-500/10V5/10V50000US/YH010GGE `
 
 
 
@@ -562,27 +542,5 @@ diskpart /s %~dp0srs.partition >NUL
 dism /Quiet /Apply-Image /ApplyDir:c:\ /Index:1 /ImageFile:Y:\restore_.swm /SWMFile:Y:\restore_*.swm
 bcdboot c:\Windows /c >NUL
 wpeutil reboot
-```
-
-### ***_Configuring Custom Themes for MTR Unit_***
--
-[click HERE to download](https://www.ucit.blog/post/configuring-custom-themes-for-microsoft-teams-skype-room-systems)
-
-` C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState `
-
-` SkypeSettings.xml `
-
-```
-<SkypeSettings>
-    <Theming>
-        <ThemeName>Custom</ThemeName>
-        <CustomThemeImageUrl>wallpaper.jpg</CustomThemeImageUrl>
-        <CustomThemeColor>
-            <RedComponent>1</RedComponent>
-            <GreenComponent>120</GreenComponent>
-            <BlueComponent>199</BlueComponent>
-        </CustomThemeColor>
-    </Theming>
-</SkypeSettings>
 ```
 
