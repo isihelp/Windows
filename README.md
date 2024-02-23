@@ -572,8 +572,11 @@ ffmpeg -i input_filename.mov -c:v libx264 -preset slow -profile:v high -level:v 
 - `-codec:a aac` sets the audio codec to AAC, which is recommended for PowerPoint.
 
 #### This command should convert your .mov file to an .mp4 file that's optimized for PowerPoint without losing quality.
-Source: 
+### 'Source: '
 [(1) Convert Videos with FFMPEG to PowerPoint 2016 compatible video format.](https://stackoverflow.com/questions/44130350/convert-videos-with-ffmpeg-to-powerpoint-2016-compatible-video-format)
+
 [(2) ffmpeg - Converting MOV files to MP4 - Stack Overflow.](https://stackoverflow.com/questions/12026381/ffmpeg-converting-mov-files-to-mp4)
+
 [(3) [Step-by-Step] How to Convert MOV to MP4 with FFmpeg?](https://www.videoconverterfactory.com/tips/ffmpeg-mov-to-mp4.html)
+
 [(4) ffmpeg convert mov to mp4 without reduction of bit rate. ](https://stackoverflow.com/questions/66248307/ffmpeg-convert-mov-to-mp4-without-reduction-of-bit-rate)
