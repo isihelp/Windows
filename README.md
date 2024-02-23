@@ -560,8 +560,8 @@ wpeutil reboot
 ffmpeg -i input_filename.mov -c:v libx264 -preset slow -profile:v high -level:v 4.0 -pix_fmt yuv420p -crf 22 -codec:a aac output_filename.mp4
 ```
 
-```
-In this command:
+
+#### In this command:
 - `input_filename.mov` is the name of your .mov file.
 - `output_filename.mp4` is the name you want for your converted .mp4 file.
 - `-c:v libx264` sets the video codec to H.264, which is recommended for PowerPoint.
@@ -571,12 +571,9 @@ In this command:
 - `-crf 22` sets the Constant Rate Factor to 22, which is a good balance between quality and file size.
 - `-codec:a aac` sets the audio codec to AAC, which is recommended for PowerPoint.
 
-This command should convert your .mov file to an .mp4 file that's optimized for PowerPoint without losing quality.
-```
-
-
-Source: Conversation with Bing, 2/23/2024
-(1) Convert Videos with FFMPEG to PowerPoint 2016 compatible video format. https://stackoverflow.com/questions/44130350/convert-videos-with-ffmpeg-to-powerpoint-2016-compatible-video-format.
-(2) ffmpeg - Converting MOV files to MP4 - Stack Overflow. https://stackoverflow.com/questions/12026381/ffmpeg-converting-mov-files-to-mp4.
-(3) [Step-by-Step] How to Convert MOV to MP4 with FFmpeg? - WonderFox. https://www.videoconverterfactory.com/tips/ffmpeg-mov-to-mp4.html.
-(4) ffmpeg convert mov to mp4 without reduction of bit rate. https://stackoverflow.com/questions/66248307/ffmpeg-convert-mov-to-mp4-without-reduction-of-bit-rate.
+#### This command should convert your .mov file to an .mp4 file that's optimized for PowerPoint without losing quality.
+Source: 
+[(1) Convert Videos with FFMPEG to PowerPoint 2016 compatible video format.](https://stackoverflow.com/questions/44130350/convert-videos-with-ffmpeg-to-powerpoint-2016-compatible-video-format)
+[(2) ffmpeg - Converting MOV files to MP4 - Stack Overflow.](https://stackoverflow.com/questions/12026381/ffmpeg-converting-mov-files-to-mp4)
+[(3) [Step-by-Step] How to Convert MOV to MP4 with FFmpeg?](https://www.videoconverterfactory.com/tips/ffmpeg-mov-to-mp4.html)
+[(4) ffmpeg convert mov to mp4 without reduction of bit rate. ](https://stackoverflow.com/questions/66248307/ffmpeg-convert-mov-to-mp4-without-reduction-of-bit-rate)
