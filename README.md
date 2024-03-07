@@ -97,6 +97,15 @@ ECHO Y | cmd /c winget upgrade --all --silent
 ```winget install HandBrake.HandBrake```
 
 
+#### Get version
+```(get-appxpackage microsoft.desktopappinstaller).version```
+
+#### How to update/upgrade you current App Installer
+```winget upgrade Microsoft.AppInstaller```
+
+#### If you want to download the program and install it manually then you can use this command
+```winget download --id Microsoft.PowerShell```
+
 
 ## Timezone
 
