@@ -96,7 +96,16 @@ ECHO Y | cmd /c winget upgrade --all --silent
 #### or get Handbrake
 ```winget install HandBrake.HandBrake```
 
+#### Installing VSC | for all user | no interactivity | force install | silent install
+```winget install Microsoft.VisualStudioCode --scope machine --disable-interactivity --force -h```
 
+#### UnInstalling VSC | for all user | no interactivity | force install | silent install
+```winget usinstall Microsoft.VisualStudioCode --scope machine --disable-interactivity --force -h```
+
+#### Installing PotPlayer | for all user | no interactivity | force install | silent install
+```winget install Daum.PotPlayer --scope machine --disable-interactivity --force -h```
+
+# -----------------------------------------------------------
 #### Get version
 ```(get-appxpackage microsoft.desktopappinstaller).version```
 
