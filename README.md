@@ -598,3 +598,12 @@ ffmpeg -i input_filename.mov -c:v libx264 -preset slow -profile:v high -level:v 
 [(3) [Step-by-Step] How to Convert MOV to MP4 with FFmpeg?](https://www.videoconverterfactory.com/tips/ffmpeg-mov-to-mp4.html)
 
 [(4) ffmpeg convert mov to mp4 without reduction of bit rate. ](https://stackoverflow.com/questions/66248307/ffmpeg-convert-mov-to-mp4-without-reduction-of-bit-rate)
+
+
+
+#### Google Chrome - allow updates
+```
+reg add "HKLM\SOFTWARE\Policies\Google\Update" /v "AutoUpdateCheckPeriodMinutes" /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Google\Update" /v "Install{8A69D345-D564-463C-AFF1-A69D9E530F96}" /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Google\Update" /v "Update{8A69D345-D564-463C-AFF1-A69D9E530F96}" /t REG_DWORD /d 1 /f
+```
