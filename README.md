@@ -105,7 +105,24 @@ ECHO Y | cmd /c winget upgrade --all --silent
 #### Installing PotPlayer | for all user | no interactivity | force install | silent install
 ```winget install Daum.PotPlayer --scope machine --disable-interactivity --force -h```
 
-# -----------------------------------------------------------
+# 
+```
+
+winget install --id nomacs.nomacs --scope user --disable-interactivity --force -h
+winget install --id KDE.Kdenlive --scope machine --disable-interactivity --force -h
+winget install --id CPUID.CPU-Z --scope machine --disable-interactivity --force -h
+winget install --id KDE.Krita --scope machine --disable-interactivity --force -h
+
+
+winget install --id Audacity.Audacity --scope machine --disable-interactivity --force -h
+
+
+winget install --id OBSProject.OBSStudio --scope machine --disable-interactivity --force -h
+winget install --id NewTek.NDI5Runtime --scope machine --disable-interactivity --force -h
+winget install --id NewTek.NDI5Tools --scope machine --disable-interactivity --force -h
+```
+
+
 #### Get version
 ```(get-appxpackage microsoft.desktopappinstaller).version```
 
