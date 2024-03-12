@@ -115,6 +115,7 @@ winget install --id KDE.Krita --scope machine --disable-interactivity --force -h
 
 
 winget install --id Audacity.Audacity --scope machine --disable-interactivity --force -h
+winget install --id MiXXX.MiXXX --scope machine --disable-interactivity --force -h
 
 
 winget install --id OBSProject.OBSStudio --scope machine --disable-interactivity --force -h
