@@ -133,6 +133,13 @@ winget install --id NewTek.NDI5Tools --scope machine --disable-interactivity --f
 #### If you want to download the program and install it manually then you can use this command
 ```winget download --id Microsoft.PowerShell```
 
+#
+
+### Great Tool for Backup that works for all OS
+[FreeFileSync](https://freefilesync.org/download.php)
+
+
+#
 
 ## Timezone
 
